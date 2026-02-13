@@ -1,0 +1,73 @@
+/* Los estilos del archivo CSS pertenecen a la capa de presentación */
+
+/* Las "clases" de CSS que no llevan ningun signo adicional sirven para definir que todos
+los elementos de ese tipo recibirán este estilo, sin excepción */
+body{
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+    background-color: #cad1dc; /* Color de fondo */
+    display: flex; /* Permite alinear los elementos del cuerpo */
+    justify-content: center; /* Centra horizontal */
+    align-items: center; /* Centra vertical */
+    height: 100vh; /* Alto de la pantalla, 1vh equivale a 1% de la pantalla */
+    margin: 0; /* Elimina márgenes */
+}
+
+/* El "." al inicio del nombre se usa para definir que estos atributos pertenecen a una clase,
+que debe ser incluida como id en los elementos que quieran usarla */
+.container{
+    background-color: #dae5f9;
+    padding: 2rem; /* Espacio interno, 1rem equivale a 16px*/
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 300px; /* Ancho */
+}
+
+h2{
+    color: #333; /* Color del texto */
+    margin-bottom: 1.5rem; /* Margen inferior */
+}
+
+input{
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px;
+    margin: 10px 0; /* Margen externo */
+    border: 1px solid #333; /* Borde */
+    border-radius: 6px;
+    box-sizing: border-box; /* Incluye borde en tamaño */
+    font-size: 1rem; /* Tamaño de letra */
+}
+
+/* El ":focus" especifica que los atributos solo aplican después de hacerle click al elemento 
+hasta seleccionar otro.*/
+input:focus{
+    border-color: #007bff; /* Cambia color del borde */
+    outline: none; /* Quita contorno */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #425281;
+    color: white; /* Color de texto */
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer; /* Hace que el cursor sea una mano que
+                        apunta cuando se encuentra encima del botón */
+    transition: background-color 0.7s ease; /* Define los parámetros de la animación */
+    margin-top: 10px;
+}
+
+/* El ":hover" indica que el estilo solo se aplica cuando tiene el cursor encima. */
+button:hover{
+    background-color: #1f2947;
+}
+
+#resultado{
+    margin-top: 20px; /* Margen superior */
+    font-weight: bold; /* Negrita */
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center; /* Centrado */
+}

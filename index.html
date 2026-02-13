@@ -1,0 +1,46 @@
+<!-- El archivo HTML en su totalidad pertenece a la capa de presentación -->
+
+<!-- Se establece la identificación básica de un archivo HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Encabezado, no muestra contenido de la página -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Se asigna un título a la pestaña de esta página -->
+    <title>Capas</title>
+
+    <!-- Se indica la conexión con el archivo .css dentro de la misma carpeta -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<!-- Cuerpo del HTML, aquí se define lo que el usuario ve -->
+<body>
+    <!-- Se crea un divisor con una clase de CSS, que toma 
+     los atributos de la clase del mismo nombre en ese archivo. -->
+    <div class="container">
+
+        <!-- Dos títulos -->
+        <h1 class="ejemplo">Ejemplo Básico</h1>
+        <h2>Suma de dos números</h2>
+
+        <!-- Dos casillas que reciben números y tienen IDs asignadas -->
+        <input type="number" placeholder="Número 1" id="num1">
+        <input type="number" placeholder="Número 2" id="num2">
+
+        <!-- Botón para llamar a la función de nombre "sumar()" -->
+        <button onclick="sumar()">SUMAR</button>
+
+        <!-- Parráfo pequeño con ID para poder ser identificado en otros archivos -->
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Enlaces a ambos archivos .js dentro de la misma carpeta -->
+    <script src="datos.js"></script>
+    <script src="logica.js"></script>
+
+<!-- Se cierran las etiquetas que contienen el cuerpo y el HTML completo -->
+</body>
+</html>
